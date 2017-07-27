@@ -1,0 +1,9 @@
+<h2>All Tenants</h2>
+<% @tenant.each do |tenant|%>
+    <p><a href="/tenant/<%= tenant.id %>"><%= tenant.name %></a></p>
+<% end %>
+
+<h2>All Apartments</h2>
+<% @apartment.each do |apartment|%>
+    <p><a href="/apartments/<%= apartment.id %>"><%= tenant.address %></a></p>
+<% end %>

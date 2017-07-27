@@ -1,3 +1,10 @@
+require 'active_record'
+require 'ffaker'
+require 'pg'
+require_relative 'connection'
+require_relative '../models/apartments'
+require_relative '../models/tenants'
+
 TRUNCATE TABLE apartments CASCADE;
 TRUNCATE TABLE tenants CASCADE;
 
